@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import "./App.css";
+import "../src/styles/App.css";
 
 function App() {
   return (
