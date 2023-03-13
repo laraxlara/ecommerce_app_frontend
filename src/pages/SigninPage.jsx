@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -18,7 +17,7 @@ const SigninPage = () => {
           alignItems: "center",
         }}
       >
-        <Row style={{ border: "2px solid black", padding: "5rem" }}>
+        <Row style={{ padding: "5rem" }}>
           <Col lg={6}>
             <img src={image} alt="skmke" style={{ width: "450px" }} />
           </Col>

@@ -266,7 +266,15 @@ const SigninForm = () => {
                   </Col>
                 </Form.Group>
 
-                <Button type="submit" variant="info" style={{ width: "10rem" }}>
+                <Button
+                  type="submit"
+                  variant="info"
+                  style={{
+                    width: "10rem",
+                    marginTop: "1.5rem",
+                    marginBottom: "1.5rem",
+                  }}
+                >
                   Submit
                 </Button>
                 <p onClick={() => setPageType(isSignin ? "signup" : "signin")}>
