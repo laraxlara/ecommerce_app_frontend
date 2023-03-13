@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import SigninPage from "./pages/SigninPage";
+import RequireAuth from "./redux/features/RequireAuth.js";
 import "../src/styles/App.css";
 
 function App() {
@@ -13,8 +14,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/signin" element={<SigninPage />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/signin" index element={<SigninPage />} />
+          <Route element={<RequireAuth />}>
+            <Route path="/home" element={<HomePage />} />
+          </Route>
         </Routes>
       </Router>
     </div>
